@@ -29,7 +29,7 @@ Install package with `npm` (remove `--production` to install devDependencies):
 
 Run command to give result of `97.64` degrees:
 
-    $ node test-tc.js
+    $ node sample.js
     97.64306383175676
 
 ## Conversion function format
