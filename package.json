@@ -1,0 +1,30 @@
+{
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "license": "MIT",
+  "main": "Thermocouple.js",
+  "name": "thermocouple-converter",
+  "description": "A JavaScript module for thermocouple voltage to temperature conversions. Based on the [Python script](https://github.com/andygock/Thermocouple) I wrote of the same function.",
+  "version": "0.0.1",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "thermocouple",
+    "converter"
+  ],
+  "author": "Andy Gock <andy@agock.com> (https://agock.com)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andygock/thermocouple-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andygock/thermocouple-converter/issues"
+  },
+  "homepage": "https://github.com/andygock/thermocouple-converter#readme"
+}

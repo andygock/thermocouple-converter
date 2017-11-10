@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 3
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-unused-vars": 1,
+    "eol-last": 1,
+    "no-trailing-spaces": 1
+  }
+}
