@@ -72,7 +72,7 @@ var Thermocouple = (function() {
                 } else if (degc > 630.615 && degc <= 1820) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type B thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type B thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -112,7 +112,7 @@ var Thermocouple = (function() {
                 } else if (mv > 2.431 && mv <= 13.820) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type B thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type B thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -159,7 +159,7 @@ var Thermocouple = (function() {
                 } else if (degc > 0 && degc <= 1000) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type E thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type E thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -201,7 +201,7 @@ var Thermocouple = (function() {
                 } else if (mv > 0.0 && mv <= 76.373) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type E thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type E thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -239,7 +239,7 @@ var Thermocouple = (function() {
                 } else if (degc > 760 && degc <= 1200) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type J thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type J thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -293,7 +293,7 @@ var Thermocouple = (function() {
                 } else if (mv > 42.914 && mv <= 69.553) {
                     c = tab3;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type J thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type J thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -342,7 +342,7 @@ var Thermocouple = (function() {
                 } else if (degc > 0 && degc <= 1372) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type K thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type K thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -405,7 +405,7 @@ var Thermocouple = (function() {
                 } else if (mv > 20.644 && mv <= 54.886) {
                     c = tab3;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type K thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type K thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -449,7 +449,7 @@ var Thermocouple = (function() {
                 } else if (degc > 0 && degc <= 1300) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type N thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type N thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -506,7 +506,7 @@ var Thermocouple = (function() {
                 } else if (mv > 20.613 && mv <= 47.513) {
                     c = tab3;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type N thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type N thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -553,7 +553,7 @@ var Thermocouple = (function() {
                 } else if (degc > 1664.5 && degc <= 1768.1) {
                     c = tab3;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type R thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type R thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -628,7 +628,7 @@ var Thermocouple = (function() {
                 } else if (mv > 19.739 && mv <= 21.103) {
                     c = tab4;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type R thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type R thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -674,7 +674,7 @@ var Thermocouple = (function() {
                 } else if (degc > 1664.5 && degc <= 1768.1) {
                     c = tab3;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type S thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type S thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -745,7 +745,7 @@ var Thermocouple = (function() {
                 } else if (mv > 17.536 && mv <= 18.693) {
                     c = tab4;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type S thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type S thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -792,7 +792,7 @@ var Thermocouple = (function() {
                 } else if (degc > 0 && degc <= 400) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Temperature specified is out of range for Type T thermocouple" };
+                    throw new RangeError("Temperature specified is out of range for Type T thermocouple");
                 }
                 var e = 0;
                 for (var p = 0; p < c.length; p++) {
@@ -831,7 +831,7 @@ var Thermocouple = (function() {
                 } else if (mv > 0 && mv <= 20.872) {
                     c = tab2;
                 } else {
-                    throw { name: "OutOfRange", message: "Voltage specified is out of range for Type T thermocouple" };
+                    throw new RangeError("Voltage specified is out of range for Type T thermocouple");
                 }
                 var t = 0.0;
                 for (var p = 0; p < c.length; p++) {
@@ -847,8 +847,8 @@ var Thermocouple = (function() {
             input = parseFloat(input);
 
             if (isNaN(input)) {
-                throw { name: "InvalidInput", message: "Invalid input" };
-                //throw new Error("Invalid input");
+                // throw { name: "InvalidInput", message: "Invalid input" };
+                throw new TypeError("Input is not a number");
             }
 
             // default options, default is type k millivolts input to deg C
@@ -859,7 +859,7 @@ var Thermocouple = (function() {
 
             // check thermocouple type is valid and supported
             if (!this.supported_types.includes(options.type)) {
-                throw { name: "InvalidInput", message: "Invalid thermocouple type" };
+                throw new RangeError("Invalid thermocouple type");
             }
 
             // select converter function
@@ -869,7 +869,7 @@ var Thermocouple = (function() {
             } else if (options.input == "degc") {
                 converter = "to_type_" + options.type;
             } else {
-                throw { name: "InvalidInput", message: "Only 'mv' or 'degc' is permitted as property 'input'" };
+                throw new RangeError("Only 'mv' or 'degc' is permitted as property 'input'");
             }
 
             return this.converter[converter](input);

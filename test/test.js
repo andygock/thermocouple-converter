@@ -70,19 +70,19 @@ describe("Exception triggers", function() {
     it("String input", function() {
         test.exception(function () {
             Thermocouple.convert("string", { type: "k", input: 'mv' })
-        }).hasValue("InvalidInput");
+        }).isInstanceOf(TypeError);
         test.exception(function () {
             Thermocouple.convert("string", { type: "k", input: 'degc' })
-        }).hasValue("InvalidInput");
+        }).isInstanceOf(TypeError);
     });
 
     it("Out of range numeric input", function () {
         test.exception(function () {
             Thermocouple.convert(123456, { type: "k", input: 'mv' })
-        }).hasValue("OutOfRange");
+        }).isInstanceOf(RangeError);
         test.exception(function () {
             Thermocouple.convert(123456, { type: "k", input: 'degc' })
-        }).hasValue("OutOfRange");
+        }).isInstanceOf(RangeError);
     });
 
 });
