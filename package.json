@@ -8,7 +8,6 @@
   "name": "thermocouple-converter",
   "description": "A JavaScript module for thermocouple voltage to temperature conversions. Based on the [Python script](https://github.com/andygock/Thermocouple) I wrote of the same function.",
   "version": "1.0.1",
-  "dependencies": {},
   "scripts": {
     "test": "mocha"
   },
@@ -24,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/andygock/thermocouple-converter/issues"
   },
-  "homepage": "https://github.com/andygock/thermocouple-converter#readme"
+  "homepage": "https://github.com/andygock/thermocouple-converter#readme",
+  "pnpm": {
+    "overrides": {
+      "ansi-regex@>2.1.1 <5.0.1": ">=5.0.1"
+    }
+  }
 }

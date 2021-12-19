@@ -1,5 +1,8 @@
 lockfileVersion: 5.3
 
+overrides:
+  ansi-regex@>2.1.1 <5.0.1: '>=5.0.1'
+
 specifiers:
   mocha: ^8.2.1
   unit.js: ^2.0.0
@@ -42,11 +45,6 @@ packages:
   /ansi-colors/4.1.1:
     resolution: {integrity: sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA==}
     engines: {node: '>=6'}
-    dev: true
-
-  /ansi-regex/3.0.0:
-    resolution: {integrity: sha1-7QMXwyIGT3lGbAKWa922Bas32Zg=}
-    engines: {node: '>=4'}
     dev: true
 
   /ansi-regex/5.0.1:
@@ -791,7 +789,7 @@ packages:
     resolution: {integrity: sha1-qEeQIusaw2iocTibY1JixQXuNo8=}
     engines: {node: '>=4'}
     dependencies:
-      ansi-regex: 3.0.0
+      ansi-regex: 5.0.1
     dev: true
 
   /strip-ansi/6.0.1:
