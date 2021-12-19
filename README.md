@@ -23,6 +23,8 @@ var result = Thermocouple.convert(4.0, { type: 'k', input: 'mv' });
 console.log(result);
 ```
 
+[pnpm](https://pnpm.io/) was used here but instructions here are given for the more common npm package manager.
+
 Install package with `npm` (remove `--production` to install devDependencies):
 
     npm install thermocouple-converter --production
