@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "mocha": "^8.2.1",
+    "mocha": "^11.1.0",
     "unit.js": "^2.0.0"
   },
   "license": "MIT",
